@@ -30,7 +30,7 @@ section {
     padding: 2rem;
 }
 
-ol {
+ul {
     list-style-type: none;
     padding: 0;
 }
@@ -46,7 +46,13 @@ li {
     color:peachpuff;
     background-color: rgb(13, 69, 60);
 }
-
+#shark{
+ filter:grayscale(70%) invert(60%)
+ border:2px solid black;
+}
+#shark:hover .caption{
+    visibility:visible;
+}
 footer {
     background-color: #250808;
     color: #dcbcbc;
@@ -121,7 +127,13 @@ footer {
         </div>
 
     </section>
-
+<section>
+    <div class="gallery-item" id="shark">
+    <img alt="shark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pond_Colors_%285106814180%29.jpg/450px-Pond_Colors_%285106814180%29.jpg">
+    <div class="caption" id="shark-cap">
+        This image has the inverted and grayscale filter and a black solid border.
+    </div>
+</section>
     <footer>
         <p>Contact: adela.tihon@orizont.com</p>
     </footer>
