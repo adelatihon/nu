@@ -1,28 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>My Portfolio</title>
     <style>
-      body {
+        body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+h2{
+    text-align: center;
+    color:navy;
+    background-color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 header {
     background-color: #333;
-    color: #fff;
+    color: darkolivegreen;
     text-align: center;
     padding: 2rem;
 }
-
+.cred{
+    background-color: darkmagenta;
+    color:beige;
+}
 section {
     padding: 2rem;
 }
 
-ul {
+ol {
     list-style-type: none;
     padding: 0;
 }
@@ -30,14 +41,17 @@ ul {
 li {
     margin-bottom: 0.5rem;
 }
-
+#na{
+    text-align: right;
+    color:peachpuff;
+}
 .project {
     margin-bottom: 1.5rem;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #250808;
+    color: #dcbcbc;
     text-align: center;
     padding: 1rem;
     position: fixed;
@@ -45,39 +59,45 @@ footer {
     width: 100%;
 }
     </style>
-    <title>Your Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Tihon Adela</h1>
         <p>Web Developer | Designer</p>
     </header>
-
-    <section id="skills">
+    <section class="about">
+        <h2>About me</h2>
+       <div id="na">
+        <p>I study at the Orizont Lyceum in the 10 th grade.Since i was litle,i was passionate about computers,and engineering in general,especially because my dad is a software engineer.Till today i think that i have a vast knowledge about many things in general,math chemistry and informations in particular.That s why,i hope that in the future,i'll be able to become what i want: a Mechanical or Chemical engineer.</p>
+       </div>
+    </section>
+    <section class="eu">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <!-- Add more skills as needed -->
-        </ul>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Excel</li>
+            <li>Pascal</li>
+            <li>Python</li>
+
+        </ol>
     </section>
 
-    <section id="projects">
+    <section class="nu">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="cred">
             <h3>Project 1</h3>
             <p>Description of Project 1.</p>
         </div>
-        <div class="project">
+        <div class="cred">
             <h3>Project 2</h3>
             <p>Description of Project 2.</p>
         </div>
-        <!-- Add more projects as needed -->
+
     </section>
 
     <footer>
-        <p>Contact: your.email@example.com</p>
+        <p>Contact: adela.tihon@orizont.com</p>
     </footer>
 </body>
 </html>
