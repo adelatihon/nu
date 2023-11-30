@@ -121,7 +121,7 @@ img.interactive-image {
 
 img.interactive-image:active {
     height: 400px;
-	width:400px;
+	width:500px;
     filter: hue-rotate(225deg);
 }
 
@@ -131,8 +131,8 @@ div {
 }
 
 div.rectangle {
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 250px;
     background-color: DarkBlue;
     color: peachpuff;
     transition: background-color 2s, width 3s, color 0.5s;
@@ -144,7 +144,12 @@ div.rectangle:active {
     color: beige;
     width: 400px;
 }
-
+#tup{
+	background-color:#34568B;
+}
+	    #mat{
+		    background-color:#FF6F61;
+	    }
 
 
 
@@ -206,14 +211,14 @@ div.rectangle:active {
 
     </section>
      <div class="gallery-item">
-    		    <div class="image">
+    		    <div class="image" id="tup">
     		        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pond_Colors_%285106814180%29.jpg/450px-Pond_Colors_%285106814180%29.jpg">
     		    </div>
     		    <div class="caption" >
     		        This image has a black solid border,and a grayscale(70%)/invert(60%) filter.
     		    </div>
             </div>
-	    <div class="gallery-item">
+	    <div class="gallery-item" id="mat">
                   <div class="abc">
     		        <img  class="filt" src="https://www.thoughtco.com/thmb/QIHGvOYobApZ_sY6xRjIkBdhcqg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/521928855-56a9e2925f9b58b7d0ffac0a.jpg">
     		    </div>
@@ -225,7 +230,7 @@ div.rectangle:active {
 	<br>
 		    <div class="gallery-item">
                <img class="interactive-image" src="https://i.pinimg.com/474x/32/f5/50/32f55011dc2a3e0ba3331a0706ef793a.jpg">
-        <div class="rectangle">Some text in a rectangle</div>
+        <div class="rectangle">This is a clouds image with the hue-rotate(225deg) filter,and near,a rectangle text box.Both when being hovered over,change their properties.</div>
     </div>
     <br>
     <br>
