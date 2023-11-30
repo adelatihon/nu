@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>My Portfolio</title>
     <style>
         body {
@@ -114,12 +113,14 @@ float:right;}
 
 img.interactive-image {
     height: 300px;
-    transition: height 2s, filter 1s;
+	width:300px;
+    transition: height 3s, filter 2s;
 	float:left;
 }
 
 img.interactive-image:active {
     height: 400px;
+	width:400px;
     filter: hue-rotate(225deg);
 }
 
@@ -214,7 +215,7 @@ div.rectangle:active {
     		        This image has a blur of 5px and brightness of 70%.
 		    </div>
 	     </div>
-        <img class="interactive-image" src="https://i.pinimg.com/474x/32/f5/50/32f55011dc2a3e0ba3331a0706ef793a.jpg">
+     <br><br>   <img class="interactive-image" src="https://i.pinimg.com/474x/32/f5/50/32f55011dc2a3e0ba3331a0706ef793a.jpg">
         <div class="rectangle">Some text in a rectangle</div>
     </div>
     <br>
