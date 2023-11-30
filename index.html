@@ -53,12 +53,7 @@ img{
     height:250px;
     width:300px;
 }
-        .caption{
-    visibility:hidden;
-}
-img:active .caption{
-    visibility:visible;
-}
+
 footer {
     background-color: #250808;
     color: #dcbcbc;
@@ -80,13 +75,13 @@ footer {
 }
         .bun:active{
             content:"Physics";}
-        .zub{
-            visibility:hidden;
-        }
-#shark:hover .zub{
-    visibility:visible;
+       #shark:hover .zub {
+    opacity: 1;
 }
-
+.zub {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
     </style>
 </head>
 <body>
