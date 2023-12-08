@@ -1,194 +1,181 @@
-Certainly! I've made some style enhancements to make your portfolio more stylish, added hover effects, and improved overall aesthetics. Feel free to customize further based on your preferences:
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Stylish Portfolio</title>
+    <title>My Portfolio</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
-        }
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+h2{
+    text-align: center;
+    color:navy;
+    background-color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+header {
+    background-color: #333;
+    color: darkolivegreen;
+    text-align: center;
+    padding: 2rem;
+}
 
-        h1, h2, h3 {
-            margin: 0;
-        }
+section {
+    padding: 2rem;
+}
 
-        h1 {
-            font-size: 2.5rem;
-            color: darkolivegreen;
-        }
+ol {
+    list-style-type: none;
+    padding: 0;
+}
 
-        h2 {
-            text-align: center;
-            color: navy;
-            background-color: darkred;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 1rem;
-        }
-
-        header {
-            background-color: #333;
-            color: darkolivegreen;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        section {
-            padding: 2rem;
-        }
-
-        ol {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .na {
-            text-align: left;
-            color: navy;
-        }
-
-        .eu {
-            color: peachpuff;
-            background-color: rgb(13, 69, 60);
-            padding: 1rem;
+li {
+    margin-bottom: 0.5rem;
+}
+.na{
+    text-align: left;
+    color:navy;
+}
+.eu{
+    color:peachpuff;
+    background-color: rgb(13, 69, 60);
+	  padding: 1rem;
             border-radius: 8px;
+}
+img{
+ filter:grayscale(70%) invert(60%);
+ border:4px solid black;
+    height:250px;
+    width:300px;
+transition: filter 0.5s;
+        }
+  img:hover {
+        filter: grayscale(50%) invert(40%);
         }
 
-        img {
-            filter: grayscale(70%) invert(60%);
-            border: 4px solid black;
-            height: 250px;
-            width: 300px;
-            transition: filter 0.5s;
+footer {
+    background-color: #250808;
+    color: #dcbcbc;
+    text-align: center;
+    padding: 0.4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+     
+.mam:hover{
+ color:cyan;
+}
+        .mam:active::after{
+             content:"Biology";
+        color:pink;
         }
+.bun:hover{
+    color: seagreen;
+}
+        .bun:active::after{
+            content:"Informatics";
+        color:orange;
+        }
+.caption{
+    border:3px solid black;
+    padding:10px;
+    margin:10px;
+    width:50%;
+    float:right;
+}
 
-        img:hover {
-            filter: grayscale(50%) invert(40%);
-        }
 
-        footer {
-            background-color: #250808;
-            color: #dcbcbc;
-            text-align: center;
-            padding: 0.4rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+.image{
+    float:left;
+}
+.abc{
+float:right;}
+	    .dav{
+border:2px solid black;
+    padding:10px;
+    margin:10px;
+    width:50%;
+    float:left;
+	    }  
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-        .mam:hover, .bun:hover {
-            color: seagreen;
-            cursor: pointer;
-        }
+.gallery-item {
+  border: 2px dashed black;
+  width: 80%;
+  margin: 25px;
+  padding: 10px;
+  overflow: hidden;
+  transition: transform 1s;
+  align-items: center;
+}
 
-        .mam:active::after, .bun:active::after {
-            content: attr(data-info);
-            color: pink;
-        }
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+ .filt{
+	filter:blur(5px);
+	brightness:70%;
+	    }
 
-        .caption {
-            border: 3px solid black;
-            padding: 10px;
-            margin: 10px;
-            width: 50%;
-            float: right;
-            background-color: #f0f0f0;
-        }
+img.interactive-image {
+    height: 300px;
+	width:300px;
+    transition: height 3s, filter 2s;
+	float:left;
+	cursor:pointer;
+}
 
-        .image {
-            float: left;
-        }
+img.interactive-image:active {
+    height: 400px;
+	width:500px;
+    filter: hue-rotate(225deg);
+}
 
-        .abc {
-            float: right;
-        }
+div {
+    padding: 10px;
+    margin: 10px;
+}
 
-        .dav {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 10px;
-            width: 50%;
-            float: left;
-            background-color: #f0f0f0;
-        }
+div.rectangle {
+    width: 305px;
+    height: 150px;
+    background-color: DarkBlue;
+    color: peachpuff;
+    transition: background-color 2s, width 3s, color 0.5s;
+	float:right;
 
-        .gallery-item {
-            border: 2px dashed black;
-            width: 80%;
-            margin: 25px;
-            padding: 10px;
-            overflow: hidden;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
+}
 
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
+div.rectangle:active {
+    background-color:#616247;
+    color: beige;
+    width: 400px;
+}
+#tup{
+	background-color:#DFCFBE;
+}
+ #mat{
+ background-color:#34568B;
+	    }
+#logo{
+	background-color:#616247;
+}
 
-        .filt {
-            filter: blur(5px);
-            brightness: 70%;
-        }
 
-        img.interactive-image {
-            height: 300px;
-            width: 300px;
-            transition: height 0.3s, filter 0.5s;
-            float: left;
-            cursor: pointer;
-        }
 
-        img.interactive-image:active {
-            height: 400px;
-            width: 500px;
-            filter: hue-rotate(225deg);
-        }
-
-        div {
-            padding: 10px;
-            margin: 10px;
-        }
-
-        div.rectangle {
-            width: 305px;
-            height: 150px;
-            background-color: DarkBlue;
-            color: peachpuff;
-            transition: background-color 0.5s, width 0.5s, color 0.5s;
-            float: right;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        div.rectangle:active {
-            background-color: #616247;
-            color: beige;
-            width: 400px;
-        }
-
-        #tup {
-            background-color: #DFCFBE;
-        }
-
-        #mat {
-            background-color: #34568B;
-        }
-
-        #logo {
-            background-color: #616247;
-        }
     </style>
 </head>
 <body>
@@ -197,27 +184,25 @@ Certainly! I've made some style enhancements to make your portfolio more stylish
         <p>Web Developer | Designer</p>
     </header>
    
-    <section>
+    <section >
         <h2>About me</h2>
-        <div class="na">
+       <div class="na">
         <p>I study at the Orizont Lyceum in the 10 th grade.Since i was litle,i was passionate about computers,and engineering in general,especially because my dad is a software engineer.Till today i think that i have a vast knowledge about many things in general,math chemistry and informations in particular.That s why,i hope that in the future,i'll be able to become what i want: a Mechanical or Chemical engineer.</p>
        </div>
     </section>
-    
-    <section>
-        <h2>Education</h2>
-        <div class="na">
-            <ul>
-                <li>1-4 Year at Ginta Latina Lyceum in Ciocana</li>
-                <li>5-9 Year at Gheorghe Asachi Lyceum</li>
-                <li>Year 10 at Orizont Lyceum in Durlesti</li>
-            </ul>
-        </div>
-    </section>
-    
+     <section>
+         <h2>Education</h2>
+    <div class="na">
+        <ul>
+            <li>1-4 Year i studied at Ginta latina Lyceum-In ciocana</li>
+            <li>5-9 Year at Gheorghe Asachi Lyceum</li>
+            <li>Year 10 at Orizont Lyceum in Durlesti</li>
+        </ul>
+    </div>
+     </section>
     <section class="eu">
         <h2>Skills</h2>
- <h1>Language programming skills</h1>
+        <h1>Language programming skills</h1>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -230,11 +215,12 @@ Certainly! I've made some style enhancements to make your portfolio more stylish
             <li>Science/Biology and analitical thinking skills</li>
             <li>Math and Physics knowledge</li>
             <li>Knowledge of safe use and safe disposal of chemicals</li>
-        </ul>    </section>
+        </ul>
+    </section>
 
     <section class="nu">
         <h2>Projects</h2>
- <div class="mam">
+        <div class="mam">
             <h3>Meyosis and Mytosis</h3>
             <p>My mom and me,we cut some polystirene balls,into halves and shaped them properly,to resemble a cell.With different colored papers/cardboard and play dough we tried to reproduce those processes,of mytosis and meyosis,depending on the animal or thingg which it coresponds to.And then we glued these halves on a big piece of cardboard,and i took it to my biology teacher.</p>
         </div>
@@ -243,9 +229,6 @@ Certainly! I've made some style enhancements to make your portfolio more stylish
             <p>When i was in the 9 th grade,we had a kind of test,or competition: whoever makes the most interesting game og this app,wins a meal at MCDonalds,and the winner,can invite 2 friends with him.I really wanted to be the first that finishes it,and the first that has a completely different perspective of the game,than others.Because i studied,i was able to do it easily.And I won.</p>
         </div>
       <h2>Code samples(examples of simple codes we learnt and their short explanation)</h2>
-    </section>    </section>
-
-    <h2>Code samples(examples of simple codes we learnt and their short explanation)</h2>
     </section>
      <div class="gallery-item" id="tup">
     		    <div class="image" >
@@ -275,9 +258,10 @@ Certainly! I've made some style enhancements to make your portfolio more stylish
     <br>
     <br>
     <br>
-    <div class="container mt-5">
-        <h2 class="mb-4">Contact Me</h2>
- <form action="#" method="POST">
+
+<div class="container mt-5">
+  <h2 class="mb-4">Contact Me</h2>
+  <form action="#" method="POST">
     <div class="mb-3">
       <label for="name" class="form-label">Name</label>
       <input type="text" id="name" name="name" class="form-control" required>
@@ -294,10 +278,11 @@ Certainly! I've made some style enhancements to make your portfolio more stylish
   </form>
 </div>
 	<br>
-	<br>    </div>
-
-    <footer>
+	<br>
+	<footer>
         <p>Contact: adela.tihon@orizont.com/LinkedIn:adelatihon/LinkedIn.com</p>
     </footer>
+	<br>
+	<br>
 </body>
 </html>
